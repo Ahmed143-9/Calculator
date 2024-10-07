@@ -1,0 +1,263 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+    .calculator {
+        width: 100%;
+        max-width: 450px;
+        height: 650px;
+        background-color: rgb(104, 99, 161);
+        position: absolute;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #e74c3c, #4a235a);
+        
+        
+    }
+
+    .lasttouch{
+        margin:100px auto 100px;
+    }
+
+ 
+    
+
+
+
+#display{
+
+    width: 400px;
+    height: 70px;
+    background-color: rgb(71, 76, 84);
+    margin-left: 20px;
+    margin-top: 20px;
+    border:1px rgb(117, 90, 90);
+    font-size: 65px;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:inset;
+    border: 1px solid;
+
+}
+
+#keys{
+
+   height: 500px;
+   width: 400px;
+   margin-left: 23px;
+   margin-top: 20px;
+   
+
+
+}
+
+.btn{
+
+ height: 90px;
+ width: 90px;
+ border-radius: 40px;
+ margin: 2px;
+ margin-left: 5px;
+ border: none;
+ font-size: 40px;
+
+
+}
+
+.btn:hover{
+    background-color: rgb(113, 101, 101);
+    color: aliceblue;
+}
+
+.btn:active{
+    background-color: rgb(218, 87, 87);
+    
+}
+
+.btnn{
+ height: 90px;
+ width: 90px;
+ border-radius: 40px;
+ margin: 2px;
+ margin-left: 5px;
+ border: none;
+ font-size: 40px;
+background-color: antiquewhite;
+}
+.btnn:hover{
+    background-color: rgb(113, 101, 101);
+    color: aliceblue;
+}
+.btnn:active{
+    background-color: rgb(213, 153, 97);
+    
+}
+
+
+.bt{
+
+ height: 90px;
+ width: 90px;
+ border-radius: 40px;
+ margin: 2px;
+ margin-left: 5px;
+ border: none;
+ font-size: 40px;
+background-color: rgb(194, 130, 47);
+
+}
+
+
+
+
+ */
+
+
+ body {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 450px;
+    height: 650px;
+    background-color: rgb(104, 99, 161);
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #e74c3c, #4a235a);
+}
+
+/* Center the calculator on the screen using Bootstrap utilities */
+.lasttouch {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+#display {
+    width: 100%;
+    max-width: 400px;
+    height: 70px;
+    background-color: rgb(71, 76, 84);
+    margin: 20px auto;
+    border: 1px solid rgb(117, 90, 90);
+    font-size: 65px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: inset;
+    margin-left: 3vh;
+    text-align: right; 
+    padding-right: 10px;
+    
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    direction: ltr;
+}
+
+#keys {
+    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.btn, .btnn, .bt {
+    height: 90px;
+    width: 90px;
+    border-radius: 40px;
+    margin: 2px;
+    border: none;
+    font-size: 40px;
+    outline: none; 
+    transition: background-color 0.2s ease;
+}
+
+.btnn{
+    font-size: 30px !important;
+}
+
+.btn{
+    background: #4a235a !important;
+    border-radius: 50% !important;
+    color: aliceblue !important;
+    font-size: 25px !important;
+    
+}
+
+.btn:hover{
+   
+    background-color: #e74c3c !important;
+    border: 1px solid #fff !important;
+    
+    
+}
+
+.btnn:hover {
+    background-color: rgb(113, 101, 101);
+    color: aliceblue;
+}
+
+.btnn:active {
+    background-color: rgb(218, 87, 87);
+}
+
+.btn:active{
+    background-color: #fff !important;
+    color: #4a235a !important;
+}
+
+.bt {
+    background-color: rgb(194, 130, 47);
+}
+
+.btnn {
+    background-color: #e74c3c;
+    border: 1px solid #fff;
+}
+
+
+@media(max-width: 470px){
+ 
+    .calculator {
+        width: 100%;
+        max-width: 350px;
+        height: 550px;
+        
+    }
+
+    .btn, .btnn, .bt {
+        height: 70px;
+        width: 70px;
+    }
+
+    #keys {
+        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        margin: 30px auto;
+    
+    }
+
+    #display {
+
+        max-width: 320px;
+        height: 60px;
+        background-color: rgb(71, 76, 84);
+        font-size: 45px;
+        margin-left: 2vh;
+        
+        
+      
+    }
+    
+}
